@@ -1,16 +1,16 @@
 import React from 'react';
 import Header from './components/Header';
-
-// styles
-// const wrapper = {
-//   width: '100%',
-//   padding: 50,
-// };
+import SubHeader from './components/SubHeader';
+import Myths from './components/Myths';
+import Speed from './components/Speed';
 
 function App() {
   return (
     <div>
       <Header />
+      <SubHeader />
+      <Myths />
+      <Speed />
     </div>
   );
 }

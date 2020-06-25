@@ -2,9 +2,18 @@ import React from 'react';
 import frank from '../images/frank-1.png';
 
 // styles
-const headerWrapper = {
-  padding: 50,
-  backgroundColor: '#eee',
+const wrapperColor = {
+  // padding: 50,
+  // backgroundColor: '#eee',
+  // background: 'rgb(100,170,89)',
+  // background: 'radial-gradient(circle, rgba(100,170,89,1) 0%, rgba(11,83,0,1) 100%)',
+  // background: 'rgb(22,129,5)',
+  // background: 'radial-gradient(circle, rgba(22,129,5,1) 83%, rgba(11,83,0,1) 100%)',
+  // background: 'rgb(38,143,22)',
+  // background: 'radial-gradient(circle, rgba(38,143,22,1) 69%, rgba(31,112,19,1) 100%)',
+  background: 'rgb(29,112,16)',
+  background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
+  borderBottom: '5px solid #93ca89',
 };
 
 const content = {
@@ -21,34 +30,44 @@ const button = {
   padding: '10px 20px',
   border: 'none',
   borderRadius: '4px',
-  background: '#bdbcbc',
+  background: '#4c9441',
   color: '#fff',
-  fontSize: '14px',
+  fontSize: '18px',
   cursor: 'pointer',
   maxWidth: 100,
   display: 'inline',
   float: 'right',
+  fontFamily: 'Source Sans Pro, sans-serif',
+  boxShadow: '5px 5px 5px 0px rgb(13, 84, 0)',
 };
 
 const mainContent = {
   display: 'flex',
   flexFlow: 'row wrap',
-  marginTop: 100,
+  marginTop: '1em',
   alignItems: 'center',
   justifyContent: 'center',
+  // fontFamily: 'Open Sans, sans-serif',
+  fontFamily: 'Source Sans Pro, sans-serif',
+  // fontFamily: 'Hind, sans-serif',
 };
 
 const textWrap = {
   padding: 50,
   maxWidth: 400,
+  flexGrow: 1,
 };
 
 const h1 = {
   fontSize: 40,
+  // fontFamily: 'Sen, sans-serif',
+  color: '#f0ffee',
 };
 
 const subText = {
   fontSize: 20,
+  // fontFamily: 'Sen, sans-serif',
+  color: '#d9f7d5',
 };
 
 const mainImage = {
@@ -58,7 +77,7 @@ const mainImage = {
 
 export default function Header() {
   return (
-    <div style={headerWrapper}>
+    <div style={wrapperColor} className='wrapper'>
       <div style={content}>
         <p style={logo}>LOGO</p>
         <div style={button}>Get Started</div>
