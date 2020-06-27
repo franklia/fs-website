@@ -13,6 +13,7 @@ const wrapperColor = {
   // background: 'radial-gradient(circle, rgba(38,143,22,1) 69%, rgba(31,112,19,1) 100%)',
   background: 'rgb(29,112,16)',
   background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
+  borderTop: '5px solid #93ca89',
   borderBottom: '5px solid #93ca89',
 };
 

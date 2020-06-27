@@ -9,8 +9,8 @@ const wrapperColor = {
   // background: 'radial-gradient(circle, rgba(100,170,89,1) 0%, rgba(11,83,0,1) 100%)',
   // background: 'rgb(38,143,22)',
   // background: 'radial-gradient(circle, rgba(38,143,22,1) 69%, rgba(31,112,19,1) 100%)',
-  // background: 'rgb(29,112,16)',
-  // background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
+  background: 'rgb(29,112,16)',
+  background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
   borderBottom: '5px solid #93ca89',
   textAlign: 'center',
 };
@@ -109,17 +109,17 @@ export default function Header() {
   return (
     <div style={wrapperColor}>
       <div style={content}>
-        <h1 style={h1}>Speed Myths - Busted!</h1>
+        <h1 style={h1}>Reach your potential with Football Speedster</h1>
         <div style={mainContent}>
           <aside style={aside}>
-            <div style={table}>
+            {/* <div style={table}>
               <div style={tableCell}>
                 <div style={mythBadge}>
                   Myth <br />
                   <span style={{ fontSize: 50 }}>1</span>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div style={mythTitle}>You're either born fast or slow</div>
             <p style={busted}>
               <span style={{ fontSize: 20, fontWeight: 700, color: 'green' }}>FACT: </span> Speed,
@@ -129,13 +129,13 @@ export default function Header() {
           </aside>
 
           <aside style={aside}>
-            <div style={outer}>
-              {/* {/* <div style={table}> */}
-              <div style={inner}>
-                <div style={mythBadge}>Myth #1</div>
-                {/* {/* </div> */}
+            {/* <div style={outer}>
+              <div style={table}>
+                <div style={inner}>
+                  <div style={mythBadge}>Myth #1</div>
+                </div> 
               </div>
-            </div>
+            </div> */}
             <div style={mythTitle}>Sprint technique drills don't transfer to the game</div>
             <p style={busted}>
               <span style={{ fontSize: 20, fontWeight: 700, color: 'green' }}>FACT: </span> Speed,

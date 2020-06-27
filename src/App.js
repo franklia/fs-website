@@ -2,7 +2,10 @@ import React from 'react';
 import Header from './components/Header';
 import SubHeader from './components/SubHeader';
 import Myths from './components/Myths';
-import Speed from './components/Speed';
+import HowTo from './components/HowTo';
+import Potential from './components/Potential';
+import CTA from './components/CTA';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,7 +13,11 @@ function App() {
       <Header />
       <SubHeader />
       <Myths />
-      <Speed />
+      <HowTo />
+      <Potential />
+
+      <CTA />
+      <Footer />
     </div>
   );
 }
