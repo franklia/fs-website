@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import './index.css'; // all main css styles in public/index.html in <style> tag
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,7 +1,6 @@
 import React from 'react';
 import frank from '../images/frank-1.png';
 
-// styles
 const wrapperColor = {
   // padding: 50,
   // backgroundColor: '#eee',
@@ -38,7 +37,6 @@ const button = {
   maxWidth: 100,
   display: 'inline',
   float: 'right',
-  fontFamily: 'Source Sans Pro, sans-serif',
   boxShadow: '5px 5px 5px 0px rgb(13, 84, 0)',
 };
 
@@ -48,9 +46,6 @@ const mainContent = {
   marginTop: '1em',
   alignItems: 'center',
   justifyContent: 'center',
-  // fontFamily: 'Open Sans, sans-serif',
-  fontFamily: 'Source Sans Pro, sans-serif',
-  // fontFamily: 'Hind, sans-serif',
 };
 
 const textWrap = {
@@ -61,13 +56,11 @@ const textWrap = {
 
 const h1 = {
   fontSize: 40,
-  // fontFamily: 'Sen, sans-serif',
   color: '#f0ffee',
 };
 
 const subText = {
   fontSize: 20,
-  // fontFamily: 'Sen, sans-serif',
   color: '#d9f7d5',
 };
 

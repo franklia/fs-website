@@ -4,16 +4,9 @@ import React from 'react';
 // styles
 const wrapperColor = {
   padding: 50,
-  // backgroundColor: '#64AA59',
-  // background: 'rgb(100,170,89)',
-  // background: 'radial-gradient(circle, rgba(100,170,89,1) 0%, rgba(11,83,0,1) 100%)',
-  // background: 'rgb(38,143,22)',
-  // background: 'radial-gradient(circle, rgba(38,143,22,1) 69%, rgba(31,112,19,1) 100%)',
-  // background: 'rgb(29,112,16)',
-  // background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
   // grey
-  background: 'rgb(231,231,231)',
-  background: 'radial-gradient(circle, rgba(231,231,231,1) 68%, rgba(195,194,194,1) 100%)',
+  // background: 'rgb(231,231,231)',
+  // background: 'radial-gradient(circle, rgba(231,231,231,1) 68%, rgba(195,194,194,1) 100%)',
   borderBottom: '5px solid #93ca89',
   textAlign: 'center',
 };

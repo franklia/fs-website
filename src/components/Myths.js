@@ -3,7 +3,7 @@ import React from 'react';
 
 // styles
 const wrapperColor = {
-  padding: 50,
+  paddingTop: 30,
   // background: 'rgb(29,112,16)',
   // background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
   background: 'rgb(36,36,36)',
@@ -126,8 +126,9 @@ export default function Myths() {
             <div style={mythTitle}>You're either born fast or slow</div>
             <div style={busted}>BUSTED!</div>
             <p style={factText}>
-              <span style={factWord}>FACT: </span> Speed, just like fitness, is highly trainable.
-              The problem is that most coaches don't know how to improve running speed.
+              <span style={factWord}>FACT: </span> Speed, just like fitness, is highly trainable,
+              and there is more information about this further down the page. The problem is that
+              most football coaches don't know how to improve running speed.
             </p>
           </aside>
 
@@ -142,8 +143,9 @@ export default function Myths() {
             <div style={mythTitle}>Sprint technique drills don't transfer to the game</div>
             <div style={busted}>BUSTED!</div>
             <p style={factText}>
-              <span style={factWord}>FACT: </span> Speed, just like fitness, is highly trainable.
-              The problem is that most coaches don't know how to improve running speed.
+              <span style={factWord}>FACT: </span>
+              If this were true, then kicking practice would also be a waste of time. The truth is
+              that with the right coaching, any skill can be learned and used in a game situation.
             </p>
           </aside>
 
@@ -158,10 +160,9 @@ export default function Myths() {
             <div style={mythTitle}>You can't run fast if you have flat feet</div>
             <div style={busted}>BUSTED!</div>
             <p style={factText}>
-              <span style={factWord}>FACT: </span>Flat feet do not make you slow, and the "spring"
-              in your step is not dependent on arch shape. Over-pronation (rolling the foot too far
-              inward) due to weak muscles can have injury implications, but this is different to
-              flat feet.
+              <span style={factWord}>FACT: </span>The "spring" in your step is not dependent on arch
+              shape. Over-pronation (rolling the foot too far inward) due to weak muscles can have
+              injury implications, but this is a different issue.
             </p>
           </aside>
         </div>
