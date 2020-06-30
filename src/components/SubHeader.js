@@ -6,6 +6,9 @@ const wrapperWhite = {
   padding: 30,
   textAlign: 'center',
   // background: '#f8fff7',
+  // grey
+  // background: 'rgb(231,231,231)',
+  // background: 'radial-gradient(circle, rgba(231,231,231,1) 68%, rgba(195,194,194,1) 100%)',
 };
 
 const content = {

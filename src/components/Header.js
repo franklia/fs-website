@@ -10,7 +10,7 @@ const wrapperColor = {
   // background: 'radial-gradient(circle, rgba(22,129,5,1) 83%, rgba(11,83,0,1) 100%)',
   // background: 'rgb(38,143,22)',
   // background: 'radial-gradient(circle, rgba(38,143,22,1) 69%, rgba(31,112,19,1) 100%)',
-  background: 'rgb(29,112,16)',
+  // background: 'rgb(29,112,16)',
   background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
   borderTop: '5px solid #93ca89',
   borderBottom: '5px solid #93ca89',
@@ -24,6 +24,8 @@ const content = {
 const logo = {
   maxWidth: 100,
   display: 'inline',
+  color: '#fff',
+  fontSize: 25,
 };
 
 const button = {
@@ -73,7 +75,8 @@ export default function Header() {
   return (
     <div style={wrapperColor} className='wrapper'>
       <div style={content}>
-        <p style={logo}>LOGO</p>
+        <p style={logo}>Football Speedster</p>
+        {/* <p style={logo}>Speedster</p> */}
         <div style={button}>Get Started</div>
         <div style={mainContent}>
           <aside style={textWrap}>

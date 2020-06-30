@@ -1,12 +1,17 @@
 import React from 'react';
+import point from '../images/point.png';
 
 // styles
 const wrapperColor = {
   padding: 30,
-  // background: 'rgb(231,231,231)',
+  // green
+  background: 'rgb(29,112,16)',
+  background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
+  // grey
   // background: 'radial-gradient(circle, rgba(231,231,231,1) 68%, rgba(195,194,194,1) 100%)',
-  borderBottom: '5px solid #93ca89',
+  // borderBottom: '5px solid #93ca89',
   textAlign: 'center',
+  borderBottom: '5px solid #93ca89',
 };
 
 const content = {
@@ -16,12 +21,14 @@ const content = {
 
 const h1 = {
   fontSize: 40,
+  color: '#fff',
 };
 
 const subText = {
   fontSize: 24,
   maxWidth: 600,
   margin: '30px auto 40px',
+  color: '#fff',
 };
 
 const email = {
@@ -49,7 +56,21 @@ const button = {
 };
 
 const subButtonText = {
-  fontSize: 14,
+  fontSize: 16,
+  color: '#fff',
+};
+
+const image = {
+  marginTop: 50,
+};
+
+const subPointerText = {
+  fontSize: 20,
+  color: '#fff',
+  display: 'inline',
+  position: 'relative',
+  bottom: 50,
+  marginLeft: 30,
 };
 
 export default function Header() {
@@ -58,9 +79,10 @@ export default function Header() {
       <div style={content}>
         <h1 style={h1}>Get started now for FREE!</h1>
         <p style={subText}>
-          Start improving your speed with our free "Master The Basics" course. It's simple,
-          effective, and FREE!
+          {/* Start improving your speed with our free "Master The Basics" course. It's simple, */}
+          Get fast now with our free "Master The Basics" course.
         </p>
+        <p style={subText}>It's simple, effective, and FREE!</p>
         <input
           className='ctaInput'
           style={email}
@@ -69,6 +91,8 @@ export default function Header() {
         ></input>
         <div style={button}>Let's do this!</div>
         <p style={subButtonText}>(The only thing you've got to lose is potential!)</p>
+        <img src={point} style={image} height='120' />
+        <p style={subPointerText}>Umm... what are you waiting for!</p>
       </div>
     </div>
   );

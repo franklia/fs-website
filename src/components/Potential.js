@@ -7,9 +7,9 @@ import cup from '../images/cup.png';
 // styles
 const wrapperColor = {
   padding: 50,
-  background: 'rgb(29,112,16)',
-  background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
-  borderBottom: '5px solid #93ca89',
+  // background: 'rgb(29,112,16)',
+  // background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
+  // borderBottom: '5px solid #93ca89',
   textAlign: 'center',
 };
 
@@ -20,7 +20,7 @@ const content = {
 
 const h1 = {
   fontSize: 40,
-  color: '#FFF',
+  color: '#1d7010',
 };
 
 const mainContent = {
@@ -48,7 +48,7 @@ const textWrap = {
 
 const subText = {
   fontSize: 20,
-  color: '#d9f7d5',
+  // color: '#d9f7d5',
 };
 
 const subContent = {
@@ -61,6 +61,7 @@ const subContent = {
 const h3 = {
   fontSize: 22,
   marginBottom: 10,
+  color: '#1d7010',
 };
 
 export default function Header() {
