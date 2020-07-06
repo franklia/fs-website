@@ -7,11 +7,6 @@ import Potential from './components/Potential';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 
-const content = {
-  maxWidth: 1200,
-  margin: 'auto',
-};
-
 function App() {
   return (
     <div>

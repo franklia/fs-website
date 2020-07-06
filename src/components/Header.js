@@ -1,19 +1,12 @@
 import React from 'react';
 import frank from '../images/frank-1.png';
+import logo from '../images/fs_logo4.png';
 
-const wrapperColor = {
-  // padding: 50,
-  // backgroundColor: '#eee',
-  // background: 'rgb(100,170,89)',
-  // background: 'radial-gradient(circle, rgba(100,170,89,1) 0%, rgba(11,83,0,1) 100%)',
-  // background: 'rgb(22,129,5)',
-  // background: 'radial-gradient(circle, rgba(22,129,5,1) 83%, rgba(11,83,0,1) 100%)',
-  // background: 'rgb(38,143,22)',
-  // background: 'radial-gradient(circle, rgba(38,143,22,1) 69%, rgba(31,112,19,1) 100%)',
-  // background: 'rgb(29,112,16)',
+const wrapper = {
   background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
   borderTop: '5px solid #93ca89',
   borderBottom: '5px solid #93ca89',
+  padding: 50,
 };
 
 const content = {
@@ -21,14 +14,43 @@ const content = {
   margin: 'auto',
 };
 
-const logo = {
-  maxWidth: 100,
-  display: 'inline',
-  color: '#fff',
-  fontSize: 25,
+// const logo = {
+//   maxWidth: 100,
+//   display: 'inline',
+//   color: '#fff',
+// };
+
+const runner = {
+  paddingLeft: 100,
 };
 
-const button = {
+const footballText = {
+  color: '#fff',
+  fontSize: 22,
+  display: 'inline',
+  position: 'relative',
+  bottom: 21,
+  right: 135,
+  fontWeight: 600,
+  // color: '#e5fbce',
+  color: '#daffd8',
+};
+
+const speedsterText = {
+  color: '#fff',
+  fontSize: 22,
+  display: 'inline',
+  position: 'relative',
+  right: 66,
+  bottom: 21,
+  fontWeight: 600,
+  // color: '#e5fbce',
+  // color: '#c0fbbc',
+  color: '#daffd8',
+};
+
+const headerButton = {
+  marginTop: 10,
   padding: '10px 20px',
   border: 'none',
   borderRadius: '4px',
@@ -45,7 +67,7 @@ const button = {
 const mainContent = {
   display: 'flex',
   flexFlow: 'row wrap',
-  marginTop: '1em',
+  // marginTop: '1em',
   alignItems: 'center',
   justifyContent: 'center',
 };
@@ -58,12 +80,14 @@ const textWrap = {
 
 const h1 = {
   fontSize: 40,
-  color: '#f0ffee',
+  // color: '#f0ffee',
+  color: '#fff',
 };
 
 const subText = {
   fontSize: 20,
-  color: '#d9f7d5',
+  // color: '#d9f7d5',
+  color: '#fff',
 };
 
 const mainImage = {
@@ -73,21 +97,30 @@ const mainImage = {
 
 export default function Header() {
   return (
-    <div style={wrapperColor} className='wrapper'>
+    <div style={wrapper} className='wrapper'>
       <div style={content}>
-        <p style={logo}>Football Speedster</p>
-        {/* <p style={logo}>Speedster</p> */}
-        <div style={button}>Get Started</div>
+        <img src={logo} style={runner} height='60' />
+        {/* <p style={footballText}>Football</p>
+        <p style={speedsterText}>Speedster</p> */}
+        <div className='headerButton' style={headerButton}>
+          Get Started
+        </div>
         <div style={mainContent}>
-          <aside style={textWrap}>
+          {/* Aside displayed at min-width 961px */}
+          <aside style={mainImage} className='headerAside headerFrank1'>
+            <img src={frank} alt='Frank' className='headerFrank1' />
+          </aside>
+          {/* Aside displayed at all widths */}
+          <aside style={textWrap} className='headerAside'>
             <h1 style={h1}>Worried you&#39;ll never be fast enough?</h1>
             <p style={subText}>
               Football Speedster can improve your sprint technique and take your game to the next
               level!
             </p>
           </aside>
-          <aside style={mainImage}>
-            <img src={frank} alt='Frank' />
+          {/* Aside displayed at max-width 960px */}
+          <aside style={mainImage} className='headerAside headerFrank2'>
+            <img src={frank} alt='Frank' className='headerFrank2' />
           </aside>
         </div>
       </div>

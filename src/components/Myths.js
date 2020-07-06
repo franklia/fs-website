@@ -31,7 +31,7 @@ const mainContent = {
 };
 
 const aside = {
-  width: 350,
+  width: 400,
 };
 
 const outer = {

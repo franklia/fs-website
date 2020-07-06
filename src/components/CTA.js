@@ -12,6 +12,7 @@ const wrapperColor = {
   // borderBottom: '5px solid #93ca89',
   textAlign: 'center',
   borderBottom: '5px solid #93ca89',
+  borderTop: '5px solid #93ca89',
 };
 
 const content = {
@@ -32,7 +33,7 @@ const subText = {
 };
 
 const email = {
-  border: '2px solid #4c9441',
+  border: '2px solid #1c1d1c',
   padding: '10px 20px',
   fontSize: 18,
   borderTopLeftRadius: 5,
@@ -43,10 +44,10 @@ const email = {
 
 const button = {
   padding: '10px 20px',
-  border: '2px solid #4c9441',
+  border: '2px solid #1c1d1c',
   borderTopRightRadius: 5,
   borderBottomRightRadius: 5,
-  background: '#4c9441',
+  background: '#1c1d1c',
   color: '#fff',
   fontSize: '18px',
   cursor: 'pointer',

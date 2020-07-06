@@ -1,7 +1,7 @@
 import React from 'react';
 import frankOffer from '../images/frank-offer.png';
-import blocks from '../images/blocks.png';
-
+import child from '../images/child.png';
+import video from '../images/video-gallery.png';
 import cup from '../images/cup.png';
 
 // styles
@@ -20,7 +20,7 @@ const content = {
 
 const h1 = {
   fontSize: 40,
-  color: '#1d7010',
+  color: '#37a000',
 };
 
 const mainContent = {
@@ -61,7 +61,7 @@ const subContent = {
 const h3 = {
   fontSize: 22,
   marginBottom: 10,
-  color: '#1d7010',
+  color: '#37a000',
 };
 
 export default function Header() {
@@ -87,18 +87,19 @@ export default function Header() {
           <aside style={aside}>
             <h3 style={h3}>Master The Basics</h3>
             <p>(Free Course!)</p>
-            <img src={blocks} alt='Frank with offer gesture' />
+            <img src={child} alt='Frank with offer gesture' height='90' />
           </aside>
 
           <aside style={aside}>
             <h3 style={h3}>Professional Video Analysis</h3>
             <p>(Coming Soon)</p>
+            <img src={video} alt='Frank with offer gesture' />
           </aside>
 
           <aside style={aside}>
             <h3 style={h3}>Train To Win</h3>
             <p>(Pro Speed Training)</p>
-            <img src={cup} alt='Frank with offer gesture' />
+            <img src={cup} alt='Frank with offer gesture' height='80' />
           </aside>
         </div>
       </div>

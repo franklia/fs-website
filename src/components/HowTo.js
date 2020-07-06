@@ -1,6 +1,7 @@
 import React from 'react';
-import runner from '../images/runner.png';
-import rocket from '../images/rocket.png';
+import runner from '../images/technique-runner.png';
+// import calendar from '../images/calendar.png';
+import arrow from '../images/arrow.png';
 
 // styles
 const wrapperColor = {
@@ -9,9 +10,18 @@ const wrapperColor = {
   // background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
   // grey
   // background: 'radial-gradient(circle, rgba(231,231,231,1) 68%, rgba(195,194,194,1) 100%)',
-  // lighter grey
-  background: 'radial-gradient(circle, rgb(243, 243, 243) 68%, rgb(195, 194, 194) 100%)',
+
+  // lighter grey radial gradient
+  // background: 'radial-gradient(circle, rgb(243, 243, 243) 68%, rgb(195, 194, 194) 100%)',
+
+  // light grey flat
+  background: '#f3f3f3',
   // borderBottom: '5px solid #93ca89',
+
+  // light green
+  // background: '#edffef',
+  // borderBottom: '5px solid #93ca89',
+
   textAlign: 'center',
 };
 
@@ -22,7 +32,7 @@ const content = {
 
 const h1 = {
   fontSize: 40,
-  color: '#4e4e4e',
+  color: '#37a000',
 };
 
 const mainContent = {
@@ -46,7 +56,7 @@ const subTitle = {
   fontSize: 25,
   padding: '40px 0 0',
   // backgroundColor: '#1D7010',
-  color: '#4e4e4e',
+  color: '#37a000',
   fontWeight: 600,
 };
 
@@ -74,7 +84,7 @@ export default function HowTo() {
           </aside>
 
           <aside style={aside}>
-            <img src={rocket} style={image} alt='Frank with offer gesture' height='130' />
+            <img src={arrow} style={image} alt='Frank with offer gesture' height='130' />
             <div style={subTitle}>Train Fast Regularly</div>
             <p style={subText}>
               Speed, just like fitness, is highly trainable. The problem is that most coaches don't

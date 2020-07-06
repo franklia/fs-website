@@ -37,14 +37,113 @@
         -moz-osx-font-smoothing: grayscale;
       }
 
-      .wrapper {
-        padding: 50px;
-        background-color: #eee;
-      }
-
       .ctaInput:focus {
         outline: 2px solid #4c9441 !important;
         /* box-shadow: 0 0 0 1px #4c9441; */
+      }
+
+      @media only screen and (max-width: 600px) {
+        .headerButton {
+          display: none !important;
+        }
+
+        /* .aside {
+          padding: 0 !important;
+        } */
+
+        .headerAside {
+          padding: 0 !important;
+        }
+
+        .headerFrank1 {
+          width: 90%;
+        }
+
+        .headerFrank2 {
+          display: none !important;
+        }
+
+        .wrapper {
+          padding: 20px !important;
+        }
+      }
+
+      @media only screen and (min-width: 601px) {
+        /* .headerButton {
+          display: none !important;
+        }
+
+        /* .aside {
+          padding: 0 !important;
+        } */
+
+        .headerAside {
+          padding: 10px !important;
+        }
+
+        .headerFrank1 {
+          width: 90%;
+        }
+
+        .headerFrank2 {
+          display: none !important;
+        }
+
+        .wrapper {
+          padding: 20px !important;
+        }
+      }
+
+      @media only screen and (min-width: 780px) {
+        /* .headerButton {
+          display: none !important;
+        }
+
+        /* .aside {
+          padding: 0 !important;
+        } */
+
+        .headerAside {
+          padding: 20px !important;
+        }
+
+        .headerFrank1 {
+          display: none !important;
+        }
+
+        .headerFrank2 {
+          display: block !important;
+        }
+
+        .wrapper {
+          padding: 20px !important;
+        }
+      }
+
+      @media only screen and (min-width: 960px) {
+        /* .headerButton {
+          display: none !important;
+        }
+
+        /* .aside {
+          padding: 0 !important;
+        } */
+
+        .headerFrank1 {
+          display: none !important;
+        }
+
+        .headerFrank2 {
+          display: block !important;
+        }
+
+        .wrapper {
+          padding: 20px !important;
+        }
+
+        .headerAside {
+          padding: 50px !important;
+        }
       }
     </style>
   </head>
