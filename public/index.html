@@ -44,7 +44,7 @@
 
       @media only screen and (max-width: 600px) {
         .headerButton {
-          display: none !important;
+          /* display: none !important; */
         }
 
         /* .aside {
@@ -55,27 +55,12 @@
           padding: 0 !important;
         }
 
-        .headerFrank1 {
-          width: 90%;
-        }
-
-        .headerFrank2 {
-          display: none !important;
-        }
-
         .wrapper {
           padding: 20px !important;
         }
       }
-
+      /* 
       @media only screen and (min-width: 601px) {
-        /* .headerButton {
-          display: none !important;
-        }
-
-        /* .aside {
-          padding: 0 !important;
-        } */
 
         .headerAside {
           padding: 10px !important;
@@ -92,10 +77,15 @@
         .wrapper {
           padding: 20px !important;
         }
-      }
+      } */
 
-      @media only screen and (min-width: 780px) {
-        /* .headerButton {
+      @media only screen and (max-width: 780px) {
+        .headerLogo {
+          display: table;
+          margin: auto;
+        }
+
+        .headerButton {
           display: none !important;
         }
 
@@ -103,46 +93,31 @@
           padding: 0 !important;
         } */
 
-        .headerAside {
+        /* .headerAside {
           padding: 20px !important;
-        }
-
-        .headerFrank1 {
-          display: none !important;
-        }
-
-        .headerFrank2 {
-          display: block !important;
-        }
+        } */
 
         .wrapper {
           padding: 20px !important;
         }
       }
 
-      @media only screen and (min-width: 960px) {
-        /* .headerButton {
-          display: none !important;
-        }
-
+      /* @media only screen and (min-width: 960px) { */
+      @media only screen and (max-width: 960px) {
         /* .aside {
           padding: 0 !important;
         } */
-
-        .headerFrank1 {
-          display: none !important;
-        }
-
-        .headerFrank2 {
-          display: block !important;
-        }
 
         .wrapper {
           padding: 20px !important;
         }
 
         .headerAside {
-          padding: 50px !important;
+          padding: 20px 20px 0 20px !important;
+        }
+
+        .headerFrank {
+          width: 80%;
         }
       }
     </style>

@@ -1,5 +1,5 @@
 import React from 'react';
-import stop from '../images/stop.png';
+import whistle from '../images/whistle.png';
 
 // styles
 const wrapperWhite = {
@@ -37,12 +37,12 @@ export default function Header() {
       <div style={content}>
         <p style={subHeadP1}>Has anyone ever said this to you before...</p>
         <p style={subHeadP2}>"It's no use... you're either born fast or slow."</p>
-        <img src={stop} style={{ width: 300 }} alt='Frank with stop sign' />
+        <img src={whistle} style={{ width: 200 }} alt='Frank with stop sign' />
         <p style={subHeadP1}>
           Don't believe this - its{' '}
           <span style={{ color: '#e40a0a', fontSize: 25, fontWeight: 700 }}>NOT</span> true!
         </p>
-        <p style={subHeadP3}>Read on to find out more...</p>
+        {/* <p style={subHeadP3}>Read on to find out more...</p> */}
       </div>
     </div>
   );

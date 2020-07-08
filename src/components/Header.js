@@ -20,8 +20,8 @@ const content = {
 //   color: '#fff',
 // };
 
-const runner = {
-  paddingLeft: 100,
+const headerLogo = {
+  // paddingLeft: 100,
 };
 
 const footballText = {
@@ -51,7 +51,7 @@ const speedsterText = {
 
 const headerButton = {
   marginTop: 10,
-  padding: '10px 20px',
+  padding: '10px 40px',
   border: 'none',
   borderRadius: '4px',
   background: '#4c9441',
@@ -70,6 +70,10 @@ const mainContent = {
   // marginTop: '1em',
   alignItems: 'center',
   justifyContent: 'center',
+};
+
+const aside = {
+  flexGrow: 1,
 };
 
 const textWrap = {
@@ -91,7 +95,7 @@ const subText = {
 };
 
 const mainImage = {
-  maxWidth: 200,
+  // maxWidth: 400,
   padding: 50,
 };
 
@@ -99,7 +103,7 @@ export default function Header() {
   return (
     <div style={wrapper} className='wrapper'>
       <div style={content}>
-        <img src={logo} style={runner} height='60' />
+        <img src={logo} style={headerLogo} className='headerLogo' height='60' />
         {/* <p style={footballText}>Football</p>
         <p style={speedsterText}>Speedster</p> */}
         <div className='headerButton' style={headerButton}>
@@ -107,9 +111,9 @@ export default function Header() {
         </div>
         <div style={mainContent}>
           {/* Aside displayed at min-width 961px */}
-          <aside style={mainImage} className='headerAside headerFrank1'>
+          {/* <aside style={mainImage} className='headerAside headerFrank1'>
             <img src={frank} alt='Frank' className='headerFrank1' />
-          </aside>
+          </aside> */}
           {/* Aside displayed at all widths */}
           <aside style={textWrap} className='headerAside'>
             <h1 style={h1}>Worried you&#39;ll never be fast enough?</h1>
@@ -119,8 +123,8 @@ export default function Header() {
             </p>
           </aside>
           {/* Aside displayed at max-width 960px */}
-          <aside style={mainImage} className='headerAside headerFrank2'>
-            <img src={frank} alt='Frank' className='headerFrank2' />
+          <aside style={mainImage} className='headerAside'>
+            <img src={frank} alt='Frank' className='headerFrank' />
           </aside>
         </div>
       </div>
