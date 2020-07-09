@@ -37,47 +37,62 @@
         -moz-osx-font-smoothing: grayscale;
       }
 
-      .ctaInput:focus {
+      .CTAInput:focus {
         outline: 2px solid #4c9441 !important;
-        /* box-shadow: 0 0 0 1px #4c9441; */
       }
 
       @media only screen and (max-width: 600px) {
-        .headerButton {
-          /* display: none !important; */
-        }
-
-        /* .aside {
-          padding: 0 !important;
-        } */
-
         .headerAside {
-          padding: 0 !important;
+          text-align: center;
         }
 
-        .wrapper {
+        .headerWrapper {
           padding: 20px !important;
+        }
+
+        .mythH1 {
+          padding: 0 10px;
+        }
+
+        .mythAside {
+          width: 300px !important;
+        }
+
+        .mythTitle {
+          max-width: 170px !important;
+          padding: 20px 20px 20px 20px !important;
+        }
+
+        .mythOuter {
+          height: 90px !important;
+          width: 90px !important;
+        }
+
+        .mythInner {
+          height: 80px !important;
+          width: 80px !important;
+        }
+
+        .mythBusted {
+          left: 90px !important;
+        }
+
+        .CTAInput {
+          border-radius: 0 !important;
+          text-align: center !important;
+        }
+
+        .CTAButton {
+          display: block !important;
+          margin: auto !important;
+          max-width: 250px !important;
+          border-radius: 0 !important;
+        }
+
+        .CTASubText {
+          margin: 0 auto 35px !important;
         }
       }
-      /* 
-      @media only screen and (min-width: 601px) {
-
-        .headerAside {
-          padding: 10px !important;
-        }
-
-        .headerFrank1 {
-          width: 90%;
-        }
-
-        .headerFrank2 {
-          display: none !important;
-        }
-
-        .wrapper {
-          padding: 20px !important;
-        }
-      } */
 
       @media only screen and (max-width: 780px) {
         .headerLogo {
@@ -89,35 +104,46 @@
           display: none !important;
         }
 
-        /* .aside {
+        .mythMainContent {
+          margin-top: 60px !important;
+        }
+
+        .howToWrapper {
           padding: 0 !important;
-        } */
+        }
 
-        /* .headerAside {
-          padding: 20px !important;
-        } */
+        .howToContent {
+          padding: 30px 10px 40px !important;
+        }
 
-        .wrapper {
-          padding: 20px !important;
+        .potentialWrapper {
+          padding: 30px 10px 40px !important;
+        }
+
+        .CTAWrapper {
+          padding: 0 10px !important;
         }
       }
 
-      /* @media only screen and (min-width: 960px) { */
       @media only screen and (max-width: 960px) {
-        /* .aside {
-          padding: 0 !important;
-        } */
-
-        .wrapper {
+        .headerWrapper {
           padding: 20px !important;
         }
 
         .headerAside {
-          padding: 20px 20px 0 20px !important;
+          padding: 10px !important;
         }
 
         .headerFrank {
           width: 80%;
+        }
+
+        .subHeaderWrapper {
+          padding: 0 !important;
+        }
+
+        .mythH1 {
+          margin-top: 0;
         }
       }
     </style>

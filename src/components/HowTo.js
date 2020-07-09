@@ -1,10 +1,10 @@
 import React from 'react';
 import runner from '../images/technique-runner.png';
 // import calendar from '../images/calendar.png';
-import arrow from '../images/arrow.png';
+import rocket from '../images/rocket.png';
 
 // styles
-const wrapperColor = {
+const howToWrapper = {
   padding: 50,
   // background: 'rgb(29,112,16)',
   // background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
@@ -25,7 +25,7 @@ const wrapperColor = {
   textAlign: 'center',
 };
 
-const content = {
+const howToContent = {
   maxWidth: 1200,
   margin: 'auto',
 };
@@ -33,19 +33,17 @@ const content = {
 const h1 = {
   fontSize: 40,
   color: '#37a000',
+  margin: 0,
 };
 
-const mainContent = {
+const subContent = {
   display: 'flex',
   flexFlow: 'row wrap',
-  // marginTop: 100,
   justifyContent: 'space-evenly',
 };
 
 const aside = {
-  // display: 'flex',
-  // alignContent: 'center',
-  // display: 'table',
+  margin: '0 20px',
 };
 
 const image = {
@@ -70,10 +68,10 @@ const subText = {
 
 export default function HowTo() {
   return (
-    <div style={wrapperColor}>
-      <div style={content}>
+    <div style={howToWrapper} className='howToWrapper'>
+      <div style={howToContent} className='howToContent'>
         <h1 style={h1}>There are 2 ways to get fast!</h1>
-        <div style={mainContent}>
+        <div style={subContent}>
           <aside style={aside}>
             <img src={runner} style={image} alt='Frank with offer gesture' height='130' />
             <div style={subTitle}>Improve Your Technique</div>
@@ -84,7 +82,7 @@ export default function HowTo() {
           </aside>
 
           <aside style={aside}>
-            <img src={arrow} style={image} alt='Frank with offer gesture' height='130' />
+            <img src={rocket} style={image} alt='Frank with offer gesture' height='130' />
             <div style={subTitle}>Train Fast Regularly</div>
             <p style={subText}>
               Speed, just like fitness, is highly trainable. The problem is that most coaches don't

@@ -18,23 +18,23 @@ const content = {
   margin: 'auto',
 };
 
-const h1 = {
+const mythH1 = {
   fontSize: 40,
   color: '#FFF',
 };
 
-const mainContent = {
+const mythMainContent = {
   display: 'flex',
   flexFlow: 'row wrap',
   marginTop: 100,
   justifyContent: 'space-evenly',
 };
 
-const aside = {
+const mythAside = {
   width: 400,
 };
 
-const outer = {
+const mythOuter = {
   background: '#1D7010',
   borderRadius: '50%',
   height: 100,
@@ -42,11 +42,11 @@ const outer = {
   position: 'relative',
   border: '2px solid #FFF',
   zIndex: 5,
-  left: 20,
+  // left: 20,
   bottom: 30,
 };
 
-const inner = {
+const mythInner = {
   background: '#1D7010',
   borderRadius: '50%',
   height: 90,
@@ -74,20 +74,20 @@ const mythTitle = {
   border: '2px solid #eee',
   display: 'inline-block',
   position: 'relative',
-  left: 30,
+  // left: 10,
   bottom: 70,
   fontWeight: 600,
   maxWidth: 200,
   borderRadius: 5,
 };
 
-const busted = {
+const mythBusted = {
   transform: 'rotate(-15deg)',
   fontSize: 30,
   display: 'inline-block',
   position: 'relative',
   bottom: 80,
-  left: 130,
+  left: 120,
   webkitTextStroke: '2px #1D7010',
   background: '#fff',
   padding: '0 10px',
@@ -100,9 +100,9 @@ const factWord = {
   fontWeight: 700,
 };
 
-const factText = {
+const mythFactText = {
   maxWidth: 280,
-  marginLeft: 70,
+  margin: 'auto',
   color: '#fff',
   position: 'relative',
   bottom: 60,
@@ -113,53 +113,63 @@ export default function Myths() {
   return (
     <div style={wrapperColor}>
       <div style={content}>
-        <h1 style={h1}>Speed Myths - Busted!</h1>
-        <div style={mainContent}>
-          <aside style={aside}>
-            <div style={outer}>
-              <div style={inner}>
+        <h1 style={mythH1} className='mythH1'>
+          Speed Myths - Busted!
+        </h1>
+        <div style={mythMainContent} className='mythMainContent'>
+          <aside style={mythAside} className='mythAside'>
+            <div style={mythOuter} className='mythOuter'>
+              <div style={mythInner} className='mythInner'>
                 <div style={mythBadge}>
                   Myth <span style={{ fontSize: 35 }}>#1</span>
                 </div>
               </div>
             </div>
-            <div style={mythTitle}>You're either born fast or slow</div>
-            <div style={busted}>BUSTED!</div>
-            <p style={factText}>
+            <div style={mythTitle} className='mythTitle'>
+              You're either born fast or slow
+            </div>
+            <div style={mythBusted} className='mythBusted'>
+              BUSTED!
+            </div>
+            <p style={mythFactText}>
               <span style={factWord}>FACT: </span> Speed, just like fitness, is highly trainable,
               and there is more information about this further down the page. The problem is that
               most football coaches don't know how to improve running speed.
             </p>
           </aside>
 
-          <aside style={aside}>
-            <div style={outer}>
-              <div style={inner}>
+          <aside style={mythAside} className='mythAside'>
+            <div style={mythOuter} className='mythOuter'>
+              <div style={mythInner} className='mythInner'>
                 <div style={mythBadge}>
                   Myth <span style={{ fontSize: 35 }}>#2</span>
                 </div>
               </div>
             </div>
             <div style={mythTitle}>Sprint technique drills don't transfer to the game</div>
-            <div style={busted}>BUSTED!</div>
-            <p style={factText}>
+            <div style={mythBusted} className='mythBusted'>
+              BUSTED!
+            </div>
+            <p style={mythFactText}>
               <span style={factWord}>FACT: </span>
               If this were true, then kicking practice would also be a waste of time. The truth is
               that with the right coaching, any skill can be learned and used in a game situation.
             </p>
           </aside>
 
-          <aside style={aside}>
-            <div style={outer}>
-              <div style={inner}>
+          <aside style={mythAside} className='mythAside'>
+            <div style={mythOuter} className='mythOuter'>
+              <div style={mythInner} className='mythInner'>
                 <div style={mythBadge}>
                   Myth <span style={{ fontSize: 35 }}>#3</span>
                 </div>
               </div>
             </div>
             <div style={mythTitle}>You can't run fast if you have flat feet</div>
-            <div style={busted}>BUSTED!</div>
-            <p style={factText}>
+            <div style={mythBusted} className='mythBusted'>
+              BUSTED!
+            </div>
+            <p style={mythFactText}>
               <span style={factWord}>FACT: </span>The "spring" in your step is not dependent on arch
               shape. Over-pronation (rolling the foot too far inward) due to weak muscles can have
               injury implications, but this is a different issue.

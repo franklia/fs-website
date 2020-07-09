@@ -2,20 +2,16 @@ import React from 'react';
 import point from '../images/point.png';
 
 // styles
-const wrapperColor = {
+const CTAWrapper = {
   padding: 30,
-  // green
-  background: 'rgb(29,112,16)',
   background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
-  // grey
-  // background: 'radial-gradient(circle, rgba(231,231,231,1) 68%, rgba(195,194,194,1) 100%)',
-  // borderBottom: '5px solid #93ca89',
   textAlign: 'center',
   borderBottom: '5px solid #93ca89',
   borderTop: '5px solid #93ca89',
 };
 
-const content = {
+// This is needed to ensure background color fills full width
+const CTASubWrapper = {
   maxWidth: 1200,
   margin: 'auto',
 };
@@ -25,14 +21,18 @@ const h1 = {
   color: '#fff',
 };
 
+const subTextWrapper = {
+  margin: '30px auto 50px',
+};
+
 const subText = {
   fontSize: 24,
   maxWidth: 600,
-  margin: '30px auto 40px',
+  margin: '0 auto 10px',
   color: '#fff',
 };
 
-const email = {
+const CTAInput = {
   border: '2px solid #1c1d1c',
   padding: '10px 20px',
   fontSize: 18,
@@ -42,7 +42,7 @@ const email = {
   width: 250,
 };
 
-const button = {
+const CTAButton = {
   padding: '10px 20px',
   border: '2px solid #1c1d1c',
   borderTopRightRadius: 5,
@@ -76,21 +76,27 @@ const subPointerText = {
 
 export default function Header() {
   return (
-    <div style={wrapperColor}>
-      <div style={content}>
+    <div style={CTAWrapper} className='CTAWrapper'>
+      <div style={CTASubWrapper}>
         <h1 style={h1}>Get started now for FREE!</h1>
-        <p style={subText}>
-          {/* Start improving your speed with our free "Master The Basics" course. It's simple, */}
-          Get fast now with our free "Master The Basics" course.
-        </p>
-        <p style={subText}>It's simple, effective, and FREE!</p>
+        <div style={subTextWrapper}>
+          <p style={subText} className='CTASubText'>
+            {/* Start improving your speed with our free "Master The Basics" course. It's simple, */}
+            Get fast now with our free "Master The Basics" course.
+          </p>
+          <p style={subText} className='CTASubText'>
+            It's simple, effective, and FREE!
+          </p>
+        </div>
         <input
-          className='ctaInput'
-          style={email}
+          className='CTAInput'
+          style={CTAInput}
           type='text'
           placeholder='Enter your email'
         ></input>
-        <div style={button}>Let's do this!</div>
+        <div style={CTAButton} className='CTAButton'>
+          Let's do this!
+        </div>
         <p style={subButtonText}>(The only thing you've got to lose is potential!)</p>
         <img src={point} style={image} height='120' />
         <p style={subPointerText}>Umm... what are you waiting for!</p>

@@ -2,13 +2,9 @@ import React from 'react';
 import whistle from '../images/whistle.png';
 
 // styles
-const wrapperWhite = {
+const subHeaderWrapper = {
   padding: 30,
   textAlign: 'center',
-  // background: '#f8fff7',
-  // grey
-  // background: 'rgb(231,231,231)',
-  // background: 'radial-gradient(circle, rgba(231,231,231,1) 68%, rgba(195,194,194,1) 100%)',
 };
 
 const content = {
@@ -33,7 +29,7 @@ const subHeadP3 = {
 
 export default function Header() {
   return (
-    <div style={wrapperWhite}>
+    <div style={subHeaderWrapper} className='subHeaderWrapper'>
       <div style={content}>
         <p style={subHeadP1}>Has anyone ever said this to you before...</p>
         <p style={subHeadP2}>"It's no use... you're either born fast or slow."</p>
