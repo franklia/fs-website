@@ -1,7 +1,6 @@
 import React from 'react';
 
 const wrapperColor = {
-  background: 'rgb(36,36,36)',
   background: 'radial-gradient(circle, rgba(36,36,36,1) 68%, rgba(0,0,0,1) 100%)',
 };
 

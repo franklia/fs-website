@@ -6,7 +6,7 @@ const wrapperColor = {
   paddingTop: 30,
   // background: 'rgb(29,112,16)',
   // background: 'radial-gradient(circle, rgba(29,112,16,1) 69%, rgba(11,83,0,1) 100%)',
-  background: 'rgb(36,36,36)',
+  // background: 'rgb(36,36,36)',
   background: 'radial-gradient(circle, rgba(36,36,36,1) 68%, rgba(0,0,0,1) 100%)',
   borderBottom: '5px solid #93ca89',
   borderTop: '5px solid #93ca89',

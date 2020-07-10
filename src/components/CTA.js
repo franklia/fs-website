@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import point from '../images/point.png';
 
 // styles
@@ -51,8 +51,11 @@ const CTAButton = {
   color: '#fff',
   fontSize: '18px',
   cursor: 'pointer',
-  maxWidth: 100,
+  // maxWidth: 100,
   display: 'inline',
+  height: 47,
+  position: 'relative',
+  bottom: 1,
   // boxShadow: '5px 5px 5px 0px rgb(13, 84, 0)',
 };
 
@@ -74,11 +77,86 @@ const subPointerText = {
   marginLeft: 30,
 };
 
+const confirmationDiv = {
+  minHeight: 275,
+};
+
+const confirmationText = {
+  color: '#fff',
+  fontSize: 22,
+  maxWidth: 300,
+  margin: 'auto',
+  border: '5px solid #93ca89',
+  padding: 30,
+  background: '#4c9440',
+};
+
 export default function Header() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const submit = (e) => {
+    e.preventDefault();
+    const submittedEmail = e.target.elements.email.value;
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://hooks.zapier.com/hooks/catch/7990990/ozdat7h');
+    xhr.send(JSON.stringify({ email: submittedEmail }));
+    setIsSubmitted(true);
+  };
+
+  const form = (
+    <div>
+      <form
+        action='https://hooks.zapier.com/hooks/catch/7990990/ozdat7h'
+        method='post'
+        id='submitEmail'
+        onSubmit={submit}
+      >
+        <input
+          className='CTAInput'
+          style={CTAInput}
+          type='email'
+          placeholder='Enter your email'
+          id='email'
+          name='email'
+        ></input>
+        <button
+          style={CTAButton}
+          className='CTAButton'
+          type='submit'
+          form='submitEmail'
+          value='submit'
+          // onClick='window.location.href = "https://google.com"'
+          // onClick={submit}
+        >
+          Let's do this!
+        </button>
+      </form>
+      <p style={subButtonText}>(The only thing you've got to lose is potential!)</p>
+      <img
+        src={point}
+        style={image}
+        height='120'
+        alt='hand with finger pointing to email input field'
+      />
+      <p style={subPointerText}>Umm... what are you waiting for!</p>
+    </div>
+  );
+
+  const confirmation = (
+    <div style={confirmationDiv}>
+      <p style={confirmationText}>
+        Thanks for signing up, we need a couple of days to get you set up on the program, so we'll
+        get back to you soon. Thanks for your patience!
+      </p>
+    </div>
+  );
+
   return (
     <div style={CTAWrapper} className='CTAWrapper'>
       <div style={CTASubWrapper}>
-        <h1 style={h1}>Get started now for FREE!</h1>
+        <h1 style={h1} id='CTA'>
+          Get started now for FREE!
+        </h1>
         <div style={subTextWrapper}>
           <p style={subText} className='CTASubText'>
             {/* Start improving your speed with our free "Master The Basics" course. It's simple, */}
@@ -88,18 +166,7 @@ export default function Header() {
             It's simple, effective, and FREE!
           </p>
         </div>
-        <input
-          className='CTAInput'
-          style={CTAInput}
-          type='text'
-          placeholder='Enter your email'
-        ></input>
-        <div style={CTAButton} className='CTAButton'>
-          Let's do this!
-        </div>
-        <p style={subButtonText}>(The only thing you've got to lose is potential!)</p>
-        <img src={point} style={image} height='120' />
-        <p style={subPointerText}>Umm... what are you waiting for!</p>
+        {isSubmitted === false ? form : confirmation}
       </div>
     </div>
   );

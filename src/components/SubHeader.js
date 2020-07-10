@@ -23,9 +23,9 @@ const subHeadP2 = {
   fontWeight: 600,
 };
 
-const subHeadP3 = {
-  fontSize: 24,
-};
+// const subHeadP3 = {
+//   fontSize: 24,
+// };
 
 export default function Header() {
   return (

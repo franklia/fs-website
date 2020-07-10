@@ -57,29 +57,42 @@ const subText = {
   color: '#fff',
 };
 
-const mainImage = {
-  padding: 10,
+// const mainImage = {};
+
+const headerFrank = {
+  padding: '10px 60px',
 };
 
 export default function Header() {
+  const scrollToId = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <div style={headerWrapper} className='headerWrapper'>
       <div style={content}>
-        <img src={logo} style={headerLogo} className='headerLogo' height='60' />
-        <div className='headerButton' style={headerButton}>
+        <img
+          src={logo}
+          style={headerLogo}
+          className='headerLogo'
+          height='60'
+          alt='Football Speedster logo including pic of man running'
+        />
+        <div className='headerButton' style={headerButton} onClick={() => scrollToId('CTA')}>
           Get Started
         </div>
         <div style={mainContent}>
           <aside style={textWrap} className='headerAside'>
             {/* <h1 style={h1}>Worried you&#39;ll never be fast enough?</h1> */}
-            <h1 style={h1}>Do you have the need for speed?</h1>
+            <h1 style={h1}>Need to improve your running speed?</h1>
             <p style={subText}>
               Football Speedster can improve your sprint technique and take your game to the next
               level!
             </p>
           </aside>
-          <aside style={mainImage} className='headerAside'>
-            <img src={frank} alt='Frank' className='headerFrank' />
+          <aside className='headerAside'>
+            <img style={headerFrank} src={frank} alt='Frank' className='headerFrank' />
           </aside>
         </div>
       </div>

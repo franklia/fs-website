@@ -28,10 +28,8 @@ const aside = {
   width: 400,
 };
 
-const mainImage = {
-  // maxWidth: 200,
-  // padding: 50,
-};
+// const mainImage = {
+// };
 
 const CTAFrank = {
   maxWidth: 200,
