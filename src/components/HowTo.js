@@ -76,8 +76,8 @@ export default function HowTo() {
             <img src={runner} style={image} alt='Frank with offer gesture' height='130' />
             <div style={subTitle}>Improve Your Technique</div>
             <p style={subText}>
-              Speed, just like fitness, is highly trainable. The problem is that most coaches don't
-              know how to improve running speed.
+              Proper running technique is critical if you want to reach your speed potential. Note
+              that team sport athletes also need different technique from track athletes.
             </p>
           </aside>
 
@@ -85,8 +85,8 @@ export default function HowTo() {
             <img src={rocket} style={image} alt='Frank with offer gesture' height='130' />
             <div style={subTitle}>Train Fast Regularly</div>
             <p style={subText}>
-              Speed, just like fitness, is highly trainable. The problem is that most coaches don't
-              know how to improve running speed.
+              Speed sessions need be of a high quality - that is, they should involve intense
+              drills, with long recoveries between efforts. They should also be done every week.
             </p>
           </aside>
         </div>

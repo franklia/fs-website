@@ -132,9 +132,9 @@ export default function Myths() {
               BUSTED!
             </div>
             <p style={mythFactText}>
-              <span style={factWord}>FACT: </span> Speed, just like fitness, is highly trainable,
-              and there is more information about this further down the page. The problem is that
-              most football coaches don't know how to improve running speed.
+              <span style={factWord}>FACT: </span> Speed, just like fitness, is highly trainable.
+              The problem is that most football coaches don't know how to improve running technique
+              and speed.
             </p>
           </aside>
 

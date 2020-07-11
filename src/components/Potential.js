@@ -4,7 +4,6 @@ import cubes from '../images/cubes.png';
 import desktop from '../images/desktop2.png';
 import trophy from '../images/trophy.png';
 
-// styles
 const potentialWrapper = {
   padding: 50,
   textAlign: 'center',
@@ -38,12 +37,14 @@ const CTAFrank = {
 
 const textWrap = {
   padding: 50,
-  maxWidth: 400,
+  maxWidth: 500,
   flexGrow: 1,
 };
 
 const subText = {
   fontSize: 20,
+  textAlign: 'left',
+  lineHeight: 1.6,
   // color: '#d9f7d5',
 };
 
@@ -52,6 +53,12 @@ const subContent = {
   flexFlow: 'row wrap',
   justifyContent: 'space-evenly',
   // color: '#fff',
+};
+
+const subContentText = {
+  maxWidth: 250,
+  margin: '20px auto 0',
+  fontSize: 18,
 };
 
 const h3 = {
@@ -65,15 +72,15 @@ export default function Header() {
     <div style={potentialWrapper} className='potentialWrapper'>
       <h1 style={h1}>Reach your potential with Football Speedster</h1>
       <div style={mainContent}>
-        {/* <aside style={mainImage}> */}
         <img src={CTAFrankImg} style={CTAFrank} alt='Frank with offer gesture' />
-        {/* </aside> */}
         <aside style={textWrap}>
           <p style={subText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore.
+            We provide a simple and effective online speed training program specifically tailored to
+            junior football players (suitable for ages 8 - 15, in any football code).
+          </p>
+          <p style={subText}>
+            Get started with our free course to master the fundamentals of running technique. We
+            will guide you the whole way.
           </p>
         </aside>
       </div>
@@ -82,6 +89,9 @@ export default function Header() {
           <h3 style={h3}>Master The Basics</h3>
           <p>(Free Course!)</p>
           <img src={cubes} alt='Frank with offer gesture' height='90' />
+          <p style={subContentText}>
+            Learn how to align your body correctly, in order to feel the right position for speed.
+          </p>
         </aside>
 
         <aside style={aside}>

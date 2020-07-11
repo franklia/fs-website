@@ -145,8 +145,8 @@ export default function Header() {
   const confirmation = (
     <div style={confirmationDiv}>
       <p style={confirmationText}>
-        Thanks for signing up, we need a couple of days to get you set up on the program, so we'll
-        get back to you soon. Thanks for your patience!
+        Thanks for signing up, it usually takes a day or two to get you set up on the program, so
+        we'll be in contact very soon. Thanks for your patience!
       </p>
     </div>
   );
