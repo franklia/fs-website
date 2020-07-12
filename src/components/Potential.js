@@ -5,7 +5,7 @@ import desktop from '../images/desktop2.png';
 import trophy from '../images/trophy.png';
 
 const potentialWrapper = {
-  padding: 50,
+  padding: '50px 50px 0',
   textAlign: 'center',
   maxWidth: 1200,
   margin: 'auto',
@@ -19,10 +19,13 @@ const h1 = {
 
 const mainContent = {
   display: 'flex',
-  flexFlow: 'row wrap',
+  // flexFlow: 'row wrap',
+  flexWrap: 'wrap',
   justifyContent: 'center',
+  // padding: 0,
 };
 
+// Sub content aside
 const aside = {
   width: 400,
 };
@@ -31,14 +34,14 @@ const aside = {
 // };
 
 const CTAFrank = {
-  maxWidth: 200,
-  padding: 50,
+  height: 250,
+  padding: '50px 30px 50px 70px',
 };
 
-const textWrap = {
+const potentialMainTextWrapper = {
   padding: 50,
-  maxWidth: 500,
-  flexGrow: 1,
+  maxWidth: 480,
+  // flexGrow: 1,
 };
 
 const subText = {
@@ -55,16 +58,20 @@ const subContent = {
   // color: '#fff',
 };
 
-const subContentText = {
-  maxWidth: 250,
-  margin: '20px auto 0',
-  fontSize: 18,
-};
-
 const h3 = {
   fontSize: 22,
   margin: '0 0 10px',
   color: '#37a000',
+};
+
+const subContentText = {
+  maxWidth: 290,
+  margin: '30px auto 50px',
+  fontSize: 18,
+};
+
+const subContentSubHeading = {
+  margin: '10px 0 30px',
 };
 
 export default function Header() {
@@ -72,38 +79,52 @@ export default function Header() {
     <div style={potentialWrapper} className='potentialWrapper'>
       <h1 style={h1}>Reach your potential with Football Speedster</h1>
       <div style={mainContent}>
-        <img src={CTAFrankImg} style={CTAFrank} alt='Frank with offer gesture' />
-        <aside style={textWrap}>
+        <img
+          src={CTAFrankImg}
+          style={CTAFrank}
+          className='CTAFrank'
+          alt='Frank with offer gesture'
+        />
+        <aside style={potentialMainTextWrapper} className='potentialMainTextWrapper'>
           <p style={subText}>
-            We provide a simple and effective online speed training program specifically tailored to
-            junior football players (suitable for ages 8 - 15, in any football code).
+            We provide an effective online speed training program specifically tailored to junior
+            football players (suitable for ages 8 - 15, in any football code).
           </p>
           <p style={subText}>
-            Get started with our free course to master the fundamentals of running technique. We
-            will guide you the whole way.
+            Get started with our free course to master the fundamentals of running technique. Then
+            move on to more advanced training drills. We will guide you every step of the way.
           </p>
         </aside>
       </div>
       <div style={subContent}>
         <aside style={aside}>
           <h3 style={h3}>Master The Basics</h3>
-          <p>(Free Course!)</p>
+          <p style={subContentSubHeading}>(Free Course!)</p>
           <img src={cubes} alt='Frank with offer gesture' height='90' />
           <p style={subContentText}>
-            Learn how to align your body correctly, in order to feel the right position for speed.
+            Learn sprint technique fundamentals such as body alignment, correct knee position and
+            leg drive, foot placement, arm action and more.
           </p>
         </aside>
 
         <aside style={aside}>
           <h3 style={h3}>Professional Video Analysis</h3>
-          <p>(Coming Soon)</p>
+          <p style={subContentSubHeading}>(Coming Soon)</p>
           <img src={desktop} alt='Frank with offer gesture' height='90' />
+          <p style={subContentText}>
+            Submit a video of your running technique to get professional analysis and specific
+            training drills to fast-track your progress.
+          </p>
         </aside>
 
         <aside style={aside}>
           <h3 style={h3}>Train To Win</h3>
-          <p>(Pro Speed Training)</p>
+          <p style={subContentSubHeading}>(Pro Speed Training)</p>
           <img src={trophy} alt='Frank with offer gesture' height='90' />
+          <p style={subContentText}>
+            When you've mastered the basics we will show you advanced drills to cover team sport
+            specific movements patterns and maximise speed gains.
+          </p>
         </aside>
       </div>
     </div>
