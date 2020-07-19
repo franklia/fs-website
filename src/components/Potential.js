@@ -58,7 +58,7 @@ const subContent = {
   // color: '#fff',
 };
 
-const h3 = {
+const h2 = {
   fontSize: 22,
   margin: '0 0 10px',
   color: '#37a000',
@@ -98,7 +98,7 @@ export default function Header() {
       </div>
       <div style={subContent}>
         <aside style={aside}>
-          <h3 style={h3}>Master The Basics</h3>
+          <h2 style={h2}>Master The Basics</h2>
           <p style={subContentSubHeading}>(Free Course!)</p>
           <img src={cubes} alt='Frank with offer gesture' height='90' />
           <p style={subContentText}>
@@ -108,7 +108,7 @@ export default function Header() {
         </aside>
 
         <aside style={aside}>
-          <h3 style={h3}>Professional Video Analysis</h3>
+          <h2 style={h2}>Professional Video Analysis</h2>
           <p style={subContentSubHeading}>(Coming Soon)</p>
           <img src={desktop} alt='Frank with offer gesture' height='90' />
           <p style={subContentText}>
@@ -118,7 +118,7 @@ export default function Header() {
         </aside>
 
         <aside style={aside}>
-          <h3 style={h3}>Train To Win</h3>
+          <h2 style={h2}>Train To Win</h2>
           <p style={subContentSubHeading}>(Pro Speed Training)</p>
           <img src={trophy} alt='Frank with offer gesture' height='90' />
           <p style={subContentText}>
