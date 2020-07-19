@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/fs-website/static/js/main.9ee5a30c.chunk.js",
+    "main.js.map": "/fs-website/static/js/main.9ee5a30c.chunk.js.map",
+    "runtime-main.js": "/fs-website/static/js/runtime-main.951fedc4.js",
+    "runtime-main.js.map": "/fs-website/static/js/runtime-main.951fedc4.js.map",
+    "static/js/2.45793bf4.chunk.js": "/fs-website/static/js/2.45793bf4.chunk.js",
+    "static/js/2.45793bf4.chunk.js.map": "/fs-website/static/js/2.45793bf4.chunk.js.map",
+    "index.html": "/fs-website/index.html",
+    "precache-manifest.91dd6ee3d17cd9d1be9c9e78984c414f.js": "/fs-website/precache-manifest.91dd6ee3d17cd9d1be9c9e78984c414f.js",
+    "service-worker.js": "/fs-website/service-worker.js",
+    "static/js/2.45793bf4.chunk.js.LICENSE.txt": "/fs-website/static/js/2.45793bf4.chunk.js.LICENSE.txt",
+    "static/media/CTAFrank.png": "/fs-website/static/media/CTAFrank.ded21223.png",
+    "static/media/frank-1.png": "/fs-website/static/media/frank-1.3afbc8a1.png",
+    "static/media/point.png": "/fs-website/static/media/point.a9e8ca4d.png",
+    "static/media/whistle.png": "/fs-website/static/media/whistle.079f2fc5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.951fedc4.js",
+    "static/js/2.45793bf4.chunk.js",
+    "static/js/main.9ee5a30c.chunk.js"
+  ]
+}
