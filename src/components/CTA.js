@@ -98,7 +98,7 @@ export default function Header() {
     e.preventDefault();
     const submittedEmail = e.target.elements.email.value;
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://hooks.zapier.com/hooks/catch/7990990/ozdat7h');
+    xhr.open('POST', process.env.REACT_APP_ZAPIER_WEBHOOK);
     xhr.send(JSON.stringify({ email: submittedEmail }));
     setIsSubmitted(true);
   };
@@ -106,7 +106,7 @@ export default function Header() {
   const form = (
     <div>
       <form
-        action='https://hooks.zapier.com/hooks/catch/7990990/ozdat7h'
+        action={process.env.REACT_APP_ZAPIER_WEBHOOK}
         method='post'
         id='submitEmail'
         onSubmit={submit}
