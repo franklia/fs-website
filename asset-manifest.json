@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/fs-website/static/js/main.6bf4dd23.chunk.js",
-    "main.js.map": "/fs-website/static/js/main.6bf4dd23.chunk.js.map",
-    "runtime-main.js": "/fs-website/static/js/runtime-main.951fedc4.js",
-    "runtime-main.js.map": "/fs-website/static/js/runtime-main.951fedc4.js.map",
-    "static/js/2.45793bf4.chunk.js": "/fs-website/static/js/2.45793bf4.chunk.js",
-    "static/js/2.45793bf4.chunk.js.map": "/fs-website/static/js/2.45793bf4.chunk.js.map",
-    "index.html": "/fs-website/index.html",
-    "precache-manifest.bdcf37bf8fd849c190fb80385f5ab5cc.js": "/fs-website/precache-manifest.bdcf37bf8fd849c190fb80385f5ab5cc.js",
-    "service-worker.js": "/fs-website/service-worker.js",
-    "static/js/2.45793bf4.chunk.js.LICENSE.txt": "/fs-website/static/js/2.45793bf4.chunk.js.LICENSE.txt",
-    "static/media/CTAFrank.png": "/fs-website/static/media/CTAFrank.ded21223.png",
-    "static/media/frank-1.png": "/fs-website/static/media/frank-1.3afbc8a1.png",
-    "static/media/point.png": "/fs-website/static/media/point.a9e8ca4d.png",
-    "static/media/whistle.png": "/fs-website/static/media/whistle.079f2fc5.png"
+    "main.js": "/static/js/main.cb114025.chunk.js",
+    "main.js.map": "/static/js/main.cb114025.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5cd7ca5f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5cd7ca5f.js.map",
+    "static/js/2.45793bf4.chunk.js": "/static/js/2.45793bf4.chunk.js",
+    "static/js/2.45793bf4.chunk.js.map": "/static/js/2.45793bf4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b3528be805e349499f43843caad530c8.js": "/precache-manifest.b3528be805e349499f43843caad530c8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.45793bf4.chunk.js.LICENSE.txt": "/static/js/2.45793bf4.chunk.js.LICENSE.txt",
+    "static/media/CTAFrank.png": "/static/media/CTAFrank.ded21223.png",
+    "static/media/frank-1.png": "/static/media/frank-1.3afbc8a1.png",
+    "static/media/point.png": "/static/media/point.a9e8ca4d.png",
+    "static/media/whistle.png": "/static/media/whistle.079f2fc5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.951fedc4.js",
+    "static/js/runtime-main.5cd7ca5f.js",
     "static/js/2.45793bf4.chunk.js",
-    "static/js/main.6bf4dd23.chunk.js"
+    "static/js/main.cb114025.chunk.js"
   ]
 }
